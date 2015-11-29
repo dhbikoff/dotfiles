@@ -10,9 +10,7 @@ set ttyfast
 set nu
 set nuw=3
 
-set shiftwidth=2
-set tabstop=2
-set expandtab
+set tabstop=2 shiftwidth=2 expandtab
 
 set wildmenu
 set noswapfile
