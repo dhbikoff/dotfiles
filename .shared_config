@@ -1,8 +1,8 @@
 alias ls='ls --color=auto'
 
 alias la='ls -A'
-alias l='ls -CF'
-alias ll='ls -hal'
+alias l='ls -A'
+alias ll='ls -hAl'
 
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
