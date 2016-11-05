@@ -2,7 +2,7 @@
 
 GREEN="\[\033[01;32m\]"
 RED="\[\033[01;31m\]"
-BLUE="\[\033[01;34m\]"
+WHITE="\[\033[01;37m\]"
 RESET="\[\033[0;00m\]"
 
 function git_stat() {
@@ -19,7 +19,7 @@ function git_stat() {
 }
 
 function set_prompt() {
-  PS1="$BLUE\u@\h:\w $(git_stat)$BLUE\$$RESET "
+  PS1="$WHITE\u@\h:\w $(git_stat)$WHITE\$$RESET "
 }
 
 PROMPT_COMMAND=set_prompt
