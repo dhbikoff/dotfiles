@@ -8,4 +8,5 @@ ln -s -f $(pwd)/.gitconfig $HOME/.gitconfig
 ln -s -f $(pwd)/.shared_config $HOME/.shared_config
 ln -s -f $(pwd)/.vimrc $HOME/.vimrc
 ln -s -f $(pwd)/.zshrc $HOME/.zshrc
+ln -s -f $(pwd)/.git_prompt.sh $HOME/.git_prompt.sh
 
