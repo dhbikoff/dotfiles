@@ -6,6 +6,7 @@ syntax on
 filetype indent plugin on
 
 set ttyfast
+let loaded_matchparen = 1
 
 set nu
 set nuw=3
