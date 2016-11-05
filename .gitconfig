@@ -11,3 +11,5 @@
   pager = less -F -X
 [push]
   default = simple
+[include]
+  path=~/.git_user
