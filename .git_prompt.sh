@@ -13,7 +13,7 @@ function git_stat() {
     if [[ -z "$changes" ]]; then
       echo "$GREEN[$branch] "
     else
-      echo "$RED[~$branch] "
+      echo "$RED[$branch] "
     fi
   fi
 }
