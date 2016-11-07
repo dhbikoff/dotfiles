@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
+if [ "$(uname)" = "Darwin" ]; then
+  ln -s -f $(pwd)/.bash_profile $HOME/.bash_profile
+fi
+
 ln -s -f $(pwd)/.config/terminator/config $HOME/.config/terminator/config
 ln -s -f $(pwd)/.vim/colors/molokai.vim $HOME/.vim/colors/molokai.vim
 ln -s -f $(pwd)/.bashrc $HOME/.bashrc
-ln -s -f $(pwd)/.bash_profile $HOME/.bash_profile
 ln -s -f $(pwd)/.gitconfig $HOME/.gitconfig
 ln -s -f $(pwd)/.shared_config $HOME/.shared_config
 ln -s -f $(pwd)/.vimrc $HOME/.vimrc
