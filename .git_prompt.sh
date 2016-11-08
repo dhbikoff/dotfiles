@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 GREEN="\[\033[01;32m\]"
-YELLOW="\[\033[01;31m\]"
+RED="\[\033[01;31m\]"
 WHITE="\[\033[01;37m\]"
 RESET="\[\033[0;00m\]"
 
@@ -13,7 +13,7 @@ function git_stat() {
     if [[ -z "$changes" ]]; then
       echo "$GREEN($branch) "
     else
-      echo "$YELLOW($branch) "
+      echo "$RED($branch) "
     fi
   fi
 }
