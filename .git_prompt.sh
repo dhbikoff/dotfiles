@@ -8,7 +8,7 @@ RESET="\[\033[0;00m\]"
 function git_stat() {
   git status > /dev/null 2>&1
   if [[ $? -eq "0" ]]; then
-    branch=$(git rev-parse --abbrev-ref HEAD)
+    branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
     changes=$(git status --porcelain)
     if [[ -z "$changes" ]]; then
       echo "$GREEN($branch) "
