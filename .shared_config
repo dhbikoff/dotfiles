@@ -38,10 +38,14 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 export PATH="$PATH:/opt/nodejs/bin"
 export PATH="$PATH:/opt/scala/bin"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -n "$(which rbenv)" ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+if [ -n "$(which jenv)" ]; then
+  export PATH="$HOME/.jenv/bin:$PATH"
+  eval "$(jenv init -)"
+fi
 
 # vim: syntax=sh
