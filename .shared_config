@@ -48,4 +48,8 @@ if [ -n "$(which jenv)" ]; then
   eval "$(jenv init -)"
 fi
 
+if [ -e ~/.config_overrides ]; then
+  source ~/.config_overrides
+fi
+
 # vim: syntax=sh
