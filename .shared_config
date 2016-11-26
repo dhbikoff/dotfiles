@@ -1,3 +1,4 @@
+# vi:syntax=sh
 os=$(uname)
 
 if [ $os = "Linux" ]; then
@@ -13,6 +14,7 @@ if [ $os = "Linux" ]; then
   alias egrep='egrep --color=auto'
 else # OS X
   source /usr/local/etc/bash_completion.d/git-completion.bash
+  export LSCOLORS=ExFxBxDxCxegedabagacad
   alias ls="ls -FG"
 fi
 
@@ -52,4 +54,3 @@ if [ -e ~/.config_overrides ]; then
   source ~/.config_overrides
 fi
 
-# vim: syntax=sh
