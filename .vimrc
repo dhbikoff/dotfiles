@@ -16,6 +16,8 @@ set tabstop=2 shiftwidth=2 expandtab
 set wildmenu
 set noswapfile
 
+colorscheme elflord
+
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 map <C-p> :CtrlP<CR>
@@ -24,7 +26,3 @@ map <C-p> :CtrlP<CR>
 map <Leader><Leader> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
-" Molokai Theme
-set t_Co=256
-let g:rehash256 = 1
-colorscheme molokai
