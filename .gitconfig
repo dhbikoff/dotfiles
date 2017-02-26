@@ -8,7 +8,7 @@
   ds = diff --staged
 [core]
   editor = vim
-  pager = less -F -X
+  pager = less -F -X -x4
   excludesfile = ~/.gitignore
 [push]
   default = simple
