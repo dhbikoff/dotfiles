@@ -26,3 +26,6 @@ map <C-p> :CtrlP<CR>
 map <Leader><Leader> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
+if !empty(glob("~/.vim/overrides.vim"))
+  so ~/.vim/overrides.vim
+endif
