@@ -11,7 +11,11 @@
   editor = vim
   pager = less -F -X -x4
   excludesfile = ~/.gitignore
+	compression = 9
 [push]
   default = simple
 [include]
   path=~/.git_user
+[pack]
+	packSizeLimit = 50m
+	windowMemory = 50m
