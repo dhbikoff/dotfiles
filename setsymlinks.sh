@@ -10,9 +10,6 @@ if [ "$(uname)" = "Linux" ]; then
   ln -s -f $(pwd)/.bashrc $HOME/.bashrc
 fi
 
-mkdir -p $HOME/.vim/colors
-ln -s -f $(pwd)/.vim/colors/molokai.vim $HOME/.vim/colors/molokai.vim
-
 ln -s -f $(pwd)/.gitconfig $HOME/.gitconfig
 ln -s -f $(pwd)/.shared_config $HOME/.shared_config
 ln -s -f $(pwd)/.vimrc $HOME/.vimrc
