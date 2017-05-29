@@ -20,8 +20,6 @@ fi
 
 source ~/.git_prompt.sh
 
-export PATH="$PATH:$HOME/.scripts"
-
 alias la='ls -A'
 alias l='ls -A'
 alias ll='ls -hAl'
@@ -37,8 +35,17 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
-export PATH="$PATH:/opt/nodejs/bin"
-export PATH="$PATH:/opt/scala/bin"
+if [ -d ~/.scripts ]; then
+  export PATH="$PATH:$HOME/.scripts"
+fi
+
+if [ -d /opt/nodejs ]; then
+  export PATH="$PATH:/opt/nodejs/bin"
+fi
+
+if [ -d /opt/scala ]; then
+  export PATH="$PATH:/opt/scala/bin"
+fi
 
 if [ -d ~/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
