@@ -11,7 +11,7 @@
   editor = vim
   pager = less -F -X -x4
   excludesfile = ~/.gitignore
-	compression = 9
+  compression = 9
 [push]
   default = simple
 [include]
