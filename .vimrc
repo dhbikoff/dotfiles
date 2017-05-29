@@ -1,4 +1,19 @@
-execute pathogen#infect()
+if !empty(glob("~/.vim/autoload"))
+  execute pathogen#infect()
+
+  if !empty(glob("~/.vim/bundle/ctrlp.vim"))
+    " CtrlP
+    set runtimepath^=~/.vim/bundle/ctrlp.vim
+    map <C-p> :CtrlP<CR>
+  endif
+
+  if !empty(glob("~/.vim/bundle/nerdtree"))
+    " Nerdtree
+    map <Leader><Leader> :NERDTreeToggle<CR>
+    let NERDTreeShowHidden=1
+  endif
+
+endif
 
 set nocompatible
 syntax on
@@ -17,14 +32,6 @@ set wildmenu
 set noswapfile
 
 colorscheme elflord
-
-" CtrlP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-map <C-p> :CtrlP<CR>
-
-" Nerdtree
-map <Leader><Leader> :NERDTreeToggle<CR>
-let NERDTreeShowHidden=1
 
 if !empty(glob("~/.vim/overrides.vim"))
   so ~/.vim/overrides.vim
