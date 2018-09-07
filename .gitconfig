@@ -17,5 +17,5 @@
 [include]
   path=~/.git_user
 [pack]
-	packSizeLimit = 50m
-	windowMemory = 50m
+  packSizeLimit = 50m
+  windowMemory = 50m
