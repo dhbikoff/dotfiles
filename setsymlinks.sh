@@ -6,7 +6,7 @@ fi
 
 if [ "$(uname)" = "Linux" ]; then
   mkdir -p $HOME/.config/terminator
-  ln -s -f $(pwd)/.config/terminator/config $HOME/.config/terminator/config
+  ln -s -f $(pwd)/terminator/config $HOME/.config/terminator/config
   ln -s -f $(pwd)/.bashrc $HOME/.bashrc
 fi
 
