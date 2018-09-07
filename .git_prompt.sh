@@ -19,7 +19,7 @@ function git_stat() {
 }
 
 function set_prompt() {
-  PS1="$WHITE\u@\h:\W $(git_stat)$WHITE\$$RESET "
+  PS1="\u@\h:\W $(git_stat)$RESET\$ "
 }
 
 PROMPT_COMMAND=set_prompt
