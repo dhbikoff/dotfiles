@@ -11,15 +11,15 @@ function git_stat() {
     branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
     changes=$(git status --porcelain)
     if [[ -z "$changes" ]]; then
-      echo "|$GREEN$branch"
+      echo "$GREEN$branch"
     else
-      echo "|$RED$branch"
+      echo "$RED$branch"
     fi
   fi
 }
 
 function set_prompt() {
-  PS1="$WHITE\u@\h:\W$(git_stat)$WHITE\$$RESET "
+  PS1="$WHITE\u@\h|\W|$(git_stat)$WHITE\$$RESET "
 }
 
 PROMPT_COMMAND=set_prompt
