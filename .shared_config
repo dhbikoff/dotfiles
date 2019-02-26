@@ -39,24 +39,6 @@ if [ -d ~/.scripts ]; then
   export PATH="$PATH:$HOME/.scripts"
 fi
 
-if [ -d /opt/nodejs ]; then
-  export PATH="$PATH:/opt/nodejs/bin"
-fi
-
-if [ -d /opt/scala ]; then
-  export PATH="$PATH:/opt/scala/bin"
-fi
-
-if [ -d ~/.rbenv ]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
-fi
-
-if [ -d ~/.jenv ]; then
-  export PATH="$HOME/.jenv/bin:$PATH"
-  eval "$(jenv init -)"
-fi
-
 if [ -e ~/.config_overrides ]; then
   source ~/.config_overrides
 fi
