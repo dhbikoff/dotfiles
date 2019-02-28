@@ -15,6 +15,8 @@ if !empty(glob("~/.vim/autoload"))
 
 endif
 
+set backspace=indent,eol,start
+
 set nocompatible
 syntax on
 
