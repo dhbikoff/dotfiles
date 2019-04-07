@@ -16,6 +16,7 @@ else # OS X
   source /usr/local/etc/bash_completion.d/git-completion.bash
   export LSCOLORS=ExFxBxDxCxegedabagacad
   alias ls="ls -FG"
+  alias date='gdate'
 fi
 
 source ~/.git_prompt.sh
