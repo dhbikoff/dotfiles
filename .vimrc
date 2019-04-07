@@ -34,6 +34,8 @@ set wildmenu
 set noswapfile
 set ruler
 
+set mouse=a
+
 colorscheme elflord
 
 if !empty(glob("~/.vim/overrides.vim"))
