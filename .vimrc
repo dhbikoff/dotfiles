@@ -22,6 +22,9 @@ syntax on
 
 filetype indent plugin on
 
+" use shift-tab to force tab inset
+inoremap <S-Tab> <C-V><Tab>
+
 set ttyfast
 let loaded_matchparen = 1
 
