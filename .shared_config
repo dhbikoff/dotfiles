@@ -17,6 +17,7 @@ else # OS X
   export LSCOLORS=ExFxBxDxCxegedabagacad
   alias ls="ls -FG"
   alias date='gdate'
+  touch ~/.hushlogin
 fi
 
 source ~/.git_prompt.sh
