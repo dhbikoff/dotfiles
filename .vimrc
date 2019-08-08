@@ -1,13 +1,12 @@
-if !empty(glob("~/.vim/autoload"))
-  execute pathogen#infect()
+if !empty(glob("~/.vim/pack"))
 
-  if !empty(glob("~/.vim/bundle/ctrlp.vim"))
+  if !empty(glob("~/.vim/pack/plugins/start/ctrlp.vim"))
     " CtrlP
     set runtimepath^=~/.vim/bundle/ctrlp.vim
     map <C-p> :CtrlP<CR>
   endif
 
-  if !empty(glob("~/.vim/bundle/nerdtree"))
+  if !empty(glob("~/.vim/pack/plugins/start/nerdtree"))
     " Nerdtree
     map <Leader><Leader> :NERDTreeToggle<CR>
     let NERDTreeShowHidden=1
