@@ -762,6 +762,8 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>Monaco 18</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -805,13 +807,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.36274659214541316</real>
+				<real>0.74273681640625</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.36274659214541316</real>
+				<real>0.50062886250748306</real>
 				<key>Red Component</key>
-				<real>0.382232666015625</real>
+				<real>0.10857267305254936</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -856,7 +858,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>3175EB73-86CD-4195-BEAB-74AC9090C12C</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>5</integer>
+	<integer>7</integer>
+	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
+	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1523,6 +1527,11 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSearchHistory</key>
+	<array>
+		<string>copy</string>
+		<string>masq</string>
+	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>586902194.59519005</real>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -1575,7 +1584,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-07T20:46:15Z</date>
+	<date>2019-08-12T14:37:52Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
