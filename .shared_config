@@ -26,8 +26,8 @@ source ~/.git_prompt.sh
 alias la='ls -A'
 alias l='ls -A'
 alias ll='ls -hAl'
-
 alias vi='vim'
+alias watch='watch --color '
 
 # Color for man pages
 export LESS_TERMCAP_mb=$'\E[01;31m'
