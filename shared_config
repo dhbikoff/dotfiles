@@ -46,3 +46,12 @@ if [ -e ~/.config_overrides ]; then
   source ~/.config_overrides
 fi
 
+# bash history confs
+shopt -s histappend
+shopt -s cmdhist
+export HISTFILESIZE=1000000
+export HISTSIZE=1000000
+export HISTCONTROL=ignoreboth
+export HISTIGNORE='ls:ll:bg:fg:history'
+export HISTTIMEFORMAT='%F %T '
+
