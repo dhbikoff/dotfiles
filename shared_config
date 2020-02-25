@@ -4,7 +4,7 @@ os=$(uname)
 if [ $os = "Linux" ]; then
   source /usr/share/bash-completion/bash_completion
 
-  alias ls='ls -F --color=auto --group-directories-first'
+  alias ls='ls -FA --color=auto --group-directories-first'
 
   alias pbcopy='xsel --clipboard --input'
   alias pbpaste='xsel --clipboard --output'
@@ -15,7 +15,7 @@ if [ $os = "Linux" ]; then
 else # OS X
   source /usr/local/etc/bash_completion.d/git-completion.bash
   export LSCOLORS=ExFxBxDxCxegedabagacad
-  alias ls="ls -FG"
+  alias ls="ls -FGA"
   alias date='gdate'
   alias idea="nohup /Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea > /dev/null &"
   touch ~/.hushlogin
@@ -23,9 +23,9 @@ fi
 
 source ~/.git_prompt.sh
 
-alias la='ls -A'
-alias l='ls -A'
-alias ll='ls -hAl'
+alias la='ls '
+alias l='ls '
+alias ll='ls -hl'
 alias vi='vim'
 alias watch='watch --color '
 
