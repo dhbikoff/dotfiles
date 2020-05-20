@@ -15,6 +15,7 @@ if !empty(glob("~/.vim/pack"))
 endif
 
 set backspace=indent,eol,start
+set maxmempattern=5000
 
 set nocompatible
 syntax on
