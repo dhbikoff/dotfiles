@@ -13,6 +13,7 @@ if [ $os = "Linux" ]; then
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'
 else # OS X
+  export BASH_SILENCE_DEPRECATION_WARNING=1
   source /usr/local/etc/bash_completion.d/git-completion.bash
   export LSCOLORS=ExFxBxDxCxegedabagacad
   alias ls="ls -FGA"
