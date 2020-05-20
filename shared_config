@@ -18,7 +18,6 @@ else # OS X
   export LSCOLORS=ExFxBxDxCxegedabagacad
   alias ls="ls -FGA"
   alias date='gdate'
-  alias idea="nohup /Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea > /dev/null &"
   touch ~/.hushlogin
 fi
 
