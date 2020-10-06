@@ -1,6 +1,6 @@
 [alias]
   co = checkout
-  ci = commit
+  cm = commit --no-verify
   st = status
   br = branch
   pr = pull --rebase
