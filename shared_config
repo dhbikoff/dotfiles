@@ -28,7 +28,6 @@ alias l='ls '
 alias ll='ls -hl'
 alias vi='vim'
 alias watch='watch --color '
-alias rg='rg --no-ignore'
 
 # Color for man pages
 export LESS_TERMCAP_mb=$'\E[01;31m'
