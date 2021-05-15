@@ -21,3 +21,5 @@
   windowMemory = 50m
 [pull]
   rebase = false
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
