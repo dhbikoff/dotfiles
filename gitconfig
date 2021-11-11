@@ -21,5 +21,10 @@
   windowMemory = 50m
 [pull]
   rebase = false
-[url "ssh://git@github.com/"]
-  insteadOf = https://github.com/
+[url "git@github.bamtech.co:"]
+  insteadOf = https://github.bamtech.co/
+[pager]
+  diff = diff-highlight | less
+  log = diff-highlight | less
+  show = diff-highlight | less
+
