@@ -1,4 +1,8 @@
 # vi:syntax=sh
+if [ -e ~/.config_overrides ]; then
+  source ~/.config_overrides
+fi
+
 os=$(uname)
 
 if [ $os = "Linux" ]; then
@@ -40,10 +44,6 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 if [ -d ~/.scripts ]; then
   export PATH="$PATH:$HOME/.scripts"
-fi
-
-if [ -e ~/.config_overrides ]; then
-  source ~/.config_overrides
 fi
 
 # bash history confs
