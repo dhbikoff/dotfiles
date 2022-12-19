@@ -37,7 +37,7 @@ set wildmenu
 set noswapfile
 set ruler
 
-colorscheme elflord
+set re=0
 
 if !empty(glob("~/.vim/overrides.vim"))
   so ~/.vim/overrides.vim

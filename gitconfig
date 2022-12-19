@@ -14,6 +14,7 @@
   compression = 9
 [push]
   default = simple
+  autoSetupRemote = false
 [include]
   path=~/.git_user
 [pack]
@@ -21,8 +22,6 @@
   windowMemory = 50m
 [pull]
   rebase = false
-[url "git@github.bamtech.co:"]
-  insteadOf = https://github.bamtech.co/
 [pager]
   diff = diff-highlight | less
   log = diff-highlight | less
